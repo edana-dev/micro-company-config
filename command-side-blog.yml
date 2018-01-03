@@ -28,6 +28,8 @@ spring:
 axon:
   amqp:
     exchange: blog.events.fanout.exchange
+  distributed: 
+    enabled: true
  
 security:
   oauth2:
@@ -75,11 +77,7 @@ authserver:
   hostname: authserver
   port: 9999
   contextPath: uaa
-
-axon:
-  distributed: 
-    enabled: true
-
+  
 ---
 spring:
   profiles: cloud
