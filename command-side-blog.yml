@@ -76,6 +76,10 @@ authserver:
   port: 9999
   contextPath: uaa
 
+axon:
+  distributed: 
+    enabled: true
+
 ---
 spring:
   profiles: cloud
