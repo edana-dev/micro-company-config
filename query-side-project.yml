@@ -28,9 +28,11 @@ spring:
     exchange: project.events.fanout.exchange
     queue: project.view.event.stream
   rabbitmq:
-    hostname: 127.0.0.1
+    addresses: rabbitmq
+    hostname: rabbitmq
     username: guest
     password: guest
+    virtual-host: /guest
       
 security:
   oauth2:
